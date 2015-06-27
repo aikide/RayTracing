@@ -1,0 +1,35 @@
+- camera:
+   position: {x: 170, y: 60, z: 170}
+   orientation: {h: -90, p: -20, r: 45}
+   fov_x: 60
+   fov_y: 55
+
+- node:
+   - lcs: {x: 0, y: 0, z: 0, h: 0, p: 0, r: 0, sx: 0.8, sy: 0.8, sz: 0.8}
+   - sphere: 
+     radius: 50
+   - node:
+     - lcs: {x: 1, y: 0, z: 0, h: -30, p: 0, r: 30, sx: 1, sy: 1, sz: 1}
+     - cylinder: 
+       radius: 20
+       height: 180
+     - node:
+       - lcs: {x: 0, y: 0, z: 0, h: 90, p: 0, r: 0, sx: 1, sy: 1, sz: 1}
+       - cone: 
+         radius: 40
+         height: 100
+  - node:
+    - lcs: {x: 1.3, y: 0, z: -1, h: 0, p: 0, r: 0, sx: 35, sy: 35, sz: 35}
+    - obj_model: 
+      file_name: "box.obj"
+
+#     - node:
+#       - lcs: {x: 0, y: 0, z: 0, h: 0, p: 0, r: 0, sx: 700, sy: 700, sz: 700}
+#       - obj_model: 
+#         file_name: "sword.obj"   
+#- node:
+#   - lcs: {x: 0, y: 0, z: 0, h: 0, p: 0, r: 0, sx: 1.8, sy: 1.8, sz: 1.8}
+#   - triangle: 
+#     p0: {x: -1, y: -1, z: -1}
+#     p2: {x: 1, y: 1, z: 1}
+#     p1: {x: 1, y: 1, z: 1}
